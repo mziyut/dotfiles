@@ -1,0 +1,27 @@
+[user]
+	name = Yuta Mizui
+	email = me@mziyut.com
+[push]
+	default = simple
+[core]
+	excludesfile = /Users/yuta/.gitignore
+	editor = vim
+	pager = lv -c
+	autocrlf = input
+[color]
+	ui = auto
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	dm = diff master
+	dw = diff --color-words
+	dc = diff --cached
+	ds = diff --staged
+	d1 = diff HEAD~
+	d2 = diff HEAD~~
+	d3 = diff HEAD~~~
+	d4 = diff HEAD~~~~
+	d5 = diff HEAD~~~~~
+	d10 = diff HEAD~~~~~~~~~~
+	delete-merged-branches = !git branch --merged | grep -vE '^\\*|master$|develop$' | xargs -I % git branch -d %
