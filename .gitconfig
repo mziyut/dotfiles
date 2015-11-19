@@ -25,3 +25,7 @@
 	d5 = diff HEAD~~~~~
 	d10 = diff HEAD~~~~~~~~~~
 	delete-merged-branches = !git branch --merged | grep -vE '^\\*|master$|develop$' | xargs -I % git branch -d %
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[url "git@bitbucket.org:"]
+	insteadOf = https://bitbucket.org/
