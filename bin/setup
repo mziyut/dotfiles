@@ -1,0 +1,17 @@
+#!/bin/sh
+
+## vim
+ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.vimrc ~/.vimrc
+
+## tumux
+ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.tmux.conf ~/.tmux.conf
+
+## git
+ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.gitignore ~/.gitignore
+ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.gitconfig ~/.gitconfig
+
+## zsh
+ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.zshrc ~/.zshrc
+
+## gem
+ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.gemrc ~/.gemrc
