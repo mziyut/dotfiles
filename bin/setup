@@ -15,3 +15,4 @@ ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.zshrc ~/.zshrc
 
 ## gem
 ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.gemrc ~/.gemrc
+ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.bundle ~/.bundle
