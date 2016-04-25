@@ -4,7 +4,7 @@
 [push]
 	default = simple
 [core]
-	excludesfile = /Users/yuta/.gitignore
+	excludesfile = ~/.gitignore
 	editor = vim
 	pager = lv -c
 	autocrlf = input
@@ -29,3 +29,5 @@
 	insteadOf = https://github.com/
 [url "git@bitbucket.org:"]
 	insteadOf = https://bitbucket.org/
+[url "git@gitlab.com:"]
+	insteadOf = https://gitlab.com/
