@@ -5,6 +5,7 @@ ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.vimrc ~/.vimrc
 
 ## tumux
 ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.tmux.conf ~/.tmux.conf
+brew install reattach-to-user-namespace
 
 ## git
 ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.gitignore ~/.gitignore
