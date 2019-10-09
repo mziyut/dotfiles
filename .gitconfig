@@ -12,6 +12,7 @@
 	ui = auto
 [alias]
 	co = checkout
+	cop = !"git branch --all | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
 	ci = commit
 	st = status
 	dm = diff master
