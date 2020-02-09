@@ -1,7 +1,11 @@
 #!/bin/sh
 
+## Brewfile
+ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/Brewfile ~/Brewfile
+
 ## vim
 ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.vimrc ~/.vimrc
+ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.vim ~/.vim
 
 ## tumux
 ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.tmux.conf ~/.tmux.conf
@@ -12,13 +16,13 @@ ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.gitconfig ~/.gitconfig
 
 ## zsh
 ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.zshrc ~/.zshrc
+ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.zsh ~/.zsh
 
 ## gem
 ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.gemrc ~/.gemrc
 ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.bundle ~/.bundle
 
 ## install package management tool
-brew install reattach-to-user-namespace
-mkdir ~/.tmux/plugins
+brew bundle install --file ~/Workspace/github.com/mziyut/.dotfiles/Brewfile
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 

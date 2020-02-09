@@ -1,4 +1,4 @@
 # include zshrc file
-source ~/Workspace/github.com/mziyut/.zsh/zshrc.zsh
+source ~/Workspace/github.com/mziyut/.dotfiles/.zsh/zshrc.zsh
 
 

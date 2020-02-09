@@ -1,0 +1,17 @@
+#!/bin/sh
+
+case "${OSTYPE}" in
+  darwin*)
+	brew reinstall vim --with-client-server --with-gettext --with-lua --with-luajit --with-override-system-vi --with-tcl --with-python@2
+	brew tap caskroom/fonts
+	brew cask install font-hack-nerd-font
+  ;;
+  linux*)
+	echo "Linux here...."
+  ;;
+esac
+
+ln -sfn ~/Workspace/github.com/mziyut/.vim ~/.vim
+ln -sfn ~/Workspace/github.com/mziyut/.vim/log/.viminfo ~/.viminfo
+#ln -sfn ~/Workspace/github.com/mziyut/.vim/dict/.neocomplete-php ~/.neocomplete-php
+
