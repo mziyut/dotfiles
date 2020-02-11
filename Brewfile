@@ -84,4 +84,4 @@ mas "LINE", id: 539883307
 mas "Forklift", id: 412448059
 mas "Kindle", id: 405399194
 mas "Xcode", id: 497799835
-mas "Paste", id: 967805235
+mas "TweetDeck by Twitter", id: 485812721
