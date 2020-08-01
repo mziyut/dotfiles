@@ -54,3 +54,12 @@ Session.vim
 # IDE
 .idea
 .phpcomplete_extended/
+
+##
+# costom
+.bundle/cache
+.composer/vendor
+.composer/cache
+.composer/composer.lock
+.composer/.htaccess
+.composer/auth.json

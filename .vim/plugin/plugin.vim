@@ -44,3 +44,4 @@ source ~/.vim/plugin/vim-css3-syntax.vim
 source ~/.vim/plugin/typescript-tools.vim
 source ~/.vim/plugin/rubycomplete.vim
 source ~/.vim/plugin/nerdcommenter.vim
+source ~/.vim/plugin/vim-blade.vim
