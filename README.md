@@ -3,7 +3,7 @@
 ## common
 
 ```
-$ bin/setup
+bin/setup
 ```
 
 ## vim
@@ -11,13 +11,13 @@ $ bin/setup
 ### install vim plug
 
 ```
-$ vim +PlugInstall
+vim +PlugInstall
 ````
 
 ### create dictonary file
 
 ```sh
-$ ./bin/make_dict
+bin/make_dict
 ```
 
 ### golang support
@@ -27,5 +27,5 @@ vim +:GoInstallBinaries
 
 ### typescript support
 ```sh
-`npm install -g typescript-tools
+npm install -g typescript-tools
 ```
