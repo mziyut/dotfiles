@@ -63,3 +63,6 @@ Session.vim
 .composer/composer.lock
 .composer/.htaccess
 .composer/auth.json
+.config/nvim/plugged
+.config/nvim/cache/
+.config/nvim/site/autoload/plug.vim

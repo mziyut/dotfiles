@@ -5,6 +5,7 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export KCODE=u
 export AUTOFEATURE=true
+export XDG_BASE_HOME="~/.config"
 
 bindkey -v
 

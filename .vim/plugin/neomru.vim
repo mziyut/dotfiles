@@ -1,1 +1,0 @@
-Plug 'Shougo/neomru.vim'

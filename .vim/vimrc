@@ -7,7 +7,7 @@ endif
 
 " plugin load
 call plug#begin('~/.vim/bundle')
-source ~/.vim/plugin/plugin.vim
+source ~/.vim/plugin.vim
 call plug#end()
 
 """ Config
