@@ -7,6 +7,10 @@ echo "=> [vim] ~/.vimrc, ~/.vim"
 ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.vimrc ~/.vimrc
 ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.vim ~/.vim
 
+## nvim
+echo "=> [nvim] ~/.config/nvim"
+ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.config/nvim ~/.config/nvim
+
 ## tumux
 echo "=> [tmux] ~/.tmux.conf"
 ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.tmux.conf ~/.tmux.conf
@@ -45,9 +49,10 @@ brew bundle install --file ~/Workspace/github.com/mziyut/.dotfiles/Brewfile
 echo "Tmux setup"
 
 ## tmux tpm plugin
-TMUX_TMP_DIR='~/.tmux/plugins/tpm'
+TMUX_TMP_DIR='$HOME/.tmux/plugins/tpm'
 if [ ! -d $TMUX_TMP_DIR ]; then
 	echo "Install tmux tmp plugin ..."
-	git clone https://github.com/tmux-plugins/tpm ${TMUX_TMP_DIR}
+	/bin/sh -c "git clone https://github.com/tmux-plugins/tpm ${TMUX_TMP_DIR}"
 fi
 
+pip3 install --user pynvim

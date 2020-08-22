@@ -1,9 +1,0 @@
-source ~/.vim/config/augroups/css.vim
-source ~/.vim/config/augroups/html.vim
-source ~/.vim/config/augroups/js.vim
-source ~/.vim/config/augroups/md.vim
-source ~/.vim/config/augroups/php.vim
-source ~/.vim/config/augroups/py.vim
-source ~/.vim/config/augroups/vim.vim
-source ~/.vim/config/augroups/vue.vim
-source ~/.vim/config/augroups/xml.vim
