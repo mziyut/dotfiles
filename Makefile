@@ -2,11 +2,11 @@ NOCOLOR		= \033[0m
 RED			= \033[0;31m
 GREEN		= \033[0;32m
 BREWFILE	= ~/Workspace/github.com/mziyut/.dotfiles/Brewfile
-TMUX_TMP	= $HOME/.tmux/plugins/tpm
+TMUX_TMP	= ~/.tmux/plugins/tpm
 
 all: help
 
-setup: create_symlink brew_install tmux_setup nvim_setup
+setup: create_symlink setup_brew install_brew setup_tmux setup_nvim
 
 help:
 	@echo "mziyut dotfiles"
@@ -15,6 +15,7 @@ help:
 	@echo "make create_vim_dict		- create vim dictionary (not nvim support)"
 	@echo "make install_brew		- brew install according to the brewfile definition"
 	@echo "make install_pip3		- require machine learning library python3"
+	@echo "make setup_brew			- brew setup"
 	@echo "make setup_tmux			- tmux plugin download"
 	@echo "make setup_nvim			- neovim require ruby, node, python3 library install"
 
@@ -45,20 +46,18 @@ create_vim_dict:
 	vim +PhpMakeDict &
 
 install_brew:
-	if !(type "brew" > /dev/null 2>&1); then
-		echo "=> Brew command not install."
-		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-	fi
 	brew bundle install --file $(BREWFILE)
 
 install_pip3:
 	pip3 install numpy scipy matplotlib pandas scikit-learn chainer jupyter
 
+setup_brew:
+	@echo "${GREEN}=> Brew command not install.${NOCOLOR}"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
 setup_tmux:
-	if [ ! -d $TMUX_TMP ]; then
-		echo "Install tmux tmp plugin ..."
-		/bin/sh -c "git clone https://github.com/tmux-plugins/tpm ${TMUX_TMP}"
-	fi
+	@echo "${GREEN}Install tmux tmp plugin ...${NOCOLOR}"
+	/bin/sh -c "git clone https://github.com/tmux-plugins/tpm ${TMUX_TMP}"
 
 setup_nvim:
 	pip3 install --user pynvim

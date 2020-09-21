@@ -1,31 +1,9 @@
 # .dotfiles
 
-## common
-
-```
-bin/setup
-```
-
-## vim
-
-### install vim plug
-
-```
-vim +PlugInstall
-````
-
-### create dictonary file
+## setup
 
 ```sh
-bin/make_dict
+$ make setup
 ```
 
-### golang support
-```sh
-vim +:GoInstallBinaries
-```
 
-### typescript support
-```sh
-npm install -g typescript-tools
-```
