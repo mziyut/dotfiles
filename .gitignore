@@ -66,6 +66,8 @@ Session.vim
 .config/nvim/plugged
 .config/nvim/cache/
 .config/nvim/site/autoload/plug.vim
+.config/nvim/undodir
+!.config/nvim/undodir/.gitkeep
 .gtt.yml
 .memo
 .tmp

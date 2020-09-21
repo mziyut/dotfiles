@@ -1,5 +1,0 @@
-#!/bin/sh
-
-ruby ~/.vim/bin/make_ruby_dict.rb  > ~/.vim/dict/ruby.dict
-vim +PhpMakeDict &
-

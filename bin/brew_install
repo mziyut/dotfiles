@@ -1,5 +1,0 @@
-#!/bin/sh
-
-## install package management tool
-brew bundle install --file ~/Workspace/github.com/mziyut/.dotfiles/Brewfile
-

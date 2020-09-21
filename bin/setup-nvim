@@ -1,8 +1,0 @@
-#!/bin/sh
-
-# Ruby support for Neovim.
-gem install neovim
-
-# Nvim Node.js client and plugin host
-npm install --global neovim
-
