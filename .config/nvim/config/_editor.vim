@@ -42,7 +42,7 @@ set titleold="Terminal"
 set titlestring=%F
 "" Undo
 " set conf
-set undodir=$HOME/.vim/undodir
+set undodir=$HOME/.config/nvim/undodir
 set undofile
 
 set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)

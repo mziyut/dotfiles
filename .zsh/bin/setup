@@ -1,4 +1,0 @@
-#!/bin/sh
-ln -sfn ~/Workspace/github.com/mziyut/.zsh ~/.zsh
-ln -sfn ~/Workspace/github.com/mziyut/.zshrc.defaulth ~/.zshrc
-
