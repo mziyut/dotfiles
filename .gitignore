@@ -66,3 +66,7 @@ Session.vim
 .config/nvim/plugged
 .config/nvim/cache/
 .config/nvim/site/autoload/plug.vim
+.gtt.yml
+.memo
+.tmp
+.env.bk

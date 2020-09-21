@@ -29,6 +29,8 @@ ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.zsh ~/.zsh
 echo "=> [gem] ~/.gemrc, ~/.bundle"
 ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.gemrc ~/.gemrc
 ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.bundle ~/.bundle
+## Workspace
+ln -sfn ~/Workspace ~/.go
 
 ## php
 echo "=> [php] ~/.composer"

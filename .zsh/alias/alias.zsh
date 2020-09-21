@@ -1,5 +1,6 @@
 # zshrc alias
 alias work="cd ~/Workspace"
+alias vi="vim"
 alias v="nvim"
 alias ll="ls -lG"
 alias la="ls -la"

@@ -147,6 +147,7 @@ Plug 'tpope/vim-rake'
 Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-endwise'
 Plug 'yuku/vim-ref-ri'
+Plug 'slim-template/vim-slim'
 
 "" go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
