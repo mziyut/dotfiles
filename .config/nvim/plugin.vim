@@ -154,6 +154,8 @@ Plug 'deoplete-plugins/deoplete-go', { 'do': 'make', 'for': 'go' }
 
 "" typescript
 Plug 'clausreinke/typescript-tools.vim', { 'do': 'npm install'  }
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 if has('nvim')
   Plug 'mhartington/nvim-typescript', { 'do': './install.sh', 'for': 'ts' }
 endif
@@ -161,6 +163,8 @@ endif
 "" javascript
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': 'js' }
 Plug 'wokalski/autocomplete-flow', { 'for': 'js' }
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 
 "" html
 Plug 'vim-scripts/HTML-AutoCloseTag'

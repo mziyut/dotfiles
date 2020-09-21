@@ -5,7 +5,7 @@
 	default = simple
 [core]
 	excludesfile = ~/.gitignore
-	editor = vim
+	editor = nvim
 	pager = lv -c
 	autocrlf = input
 [color]
