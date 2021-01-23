@@ -25,3 +25,5 @@ alias FUCK='fuck'
 # tmux
 [ -f ~/.zsh/alias/tmux.zsh ] && source ~/.zsh/alias/tmux.zsh
 
+# ssh
+alias pssh="grep -w Host ~/.ssh/config | peco | awk '{print $2}' | xargs -o -n 1 ssh"
