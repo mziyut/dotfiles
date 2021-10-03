@@ -176,7 +176,3 @@ Plug 'hail2u/vim-css3-syntax'
 "" github
 Plug 'SevereOverfl0w/deoplete-github'
 
-"" wp-hooks
-Plug 'mte90/deoplete-wp-hooks', { 'do': './install.sh' }
-
-
