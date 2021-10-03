@@ -173,9 +173,6 @@ Plug 'vim-scripts/HTML-AutoCloseTag'
 "" css
 Plug 'hail2u/vim-css3-syntax'
 
-"" emoji
-Plug 'fszymanski/deoplete-emoji'
-
 "" github
 Plug 'SevereOverfl0w/deoplete-github'
 
