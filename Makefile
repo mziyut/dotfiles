@@ -1,7 +1,7 @@
 NOCOLOR		= \033[0m
 RED			= \033[0;31m
 GREEN		= \033[0;32m
-BREWFILE	= ~/Workspace/github.com/mziyut/.dotfiles/Brewfile
+BREWFILE	= ~/Workspace/github.com/mziyut/dotfiles/Brewfile
 TMUX_TMP	= ~/.tmux/plugins/tpm
 
 all: help
@@ -11,7 +11,7 @@ setup: create_symlink setup_brew install_brew setup_tmux setup_nvim
 help:
 	@echo "mziyut dotfiles"
 	@echo "================"
-	@echo "make create_symlink		- create symbolic link from .dotfiles repository"
+	@echo "make create_symlink		- create symbolic link from dotfiles repository"
 	@echo "make create_vim_dict		- create vim dictionary (not nvim support)"
 	@echo "make install_brew		- brew install according to the brewfile definition"
 	@echo "make install_pip3		- require machine learning library python3"
@@ -21,25 +21,25 @@ help:
 
 create_symlink:
 	@echo "${GREEN}=> [vim] ~/.vimrc, ~/.vim${NOCOLOR}"
-	ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.vimrc ~/.vimrc
-	ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.vim ~/.vim
+	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.vimrc ~/.vimrc
+	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.vim ~/.vim
 	@echo "${GREEN}=> [nvim] ~/.config/nvim${NOCOLOR}"
-	ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.config/nvim ~/.config/nvim
+	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.config/nvim ~/.config/nvim
 	@echo "${GREEN}=> [tmux] ~/.tmux.conf${NOCOLOR}"
-	ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.tmux.conf ~/.tmux.conf
+	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.tmux.conf ~/.tmux.conf
 	@echo "${GREEN}=> [git] ~/.gitignore, ~/.gitconfig${NOCOLOR}"
-	ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.gitignore ~/.gitignore
-	ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.gitconfig ~/.gitconfig
+	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.gitignore ~/.gitignore
+	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.gitconfig ~/.gitconfig
 	@echo "${GREEN}=> [zsh] ~/.zshrc, ~/.zsh${NOCOLOR}"
-	ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.zshrc ~/.zshrc
-	ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.zsh ~/.zsh
-	@echo "${GREEN}=> [gem] ~/.gemrc, ~/.bundle${NOCOLOR}"
-	ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.gemrc ~/.gemrc
-	ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.bundle ~/.bundle
+	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.zshrc ~/.zshrc
+	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.zsh ~/.zsh
+	@echo "${GREEN}=> [ruby] ~/.gemrc, ~/.bundle${NOCOLOR}"
+	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.gemrc ~/.gemrc
+	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.bundle ~/.bundle
 	@echo "${GREEN}=> [golang] ~/.go${NOCOLOR}"
 	ln -sfn ~/Workspace ~/.go
 	@echo "${GREEN}=> [php] ~/.composer${NOCOLOR}"
-	ln -sfn ~/Workspace/github.com/mziyut/.dotfiles/.composer ~/.composer
+	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.composer ~/.composer
 
 create_vim_dict:
 	ruby ~/.vim/bin/make_ruby_dict.rb  > ~/.vim/dict/ruby.dict
