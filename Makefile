@@ -33,7 +33,7 @@ create_symlink:
 	@echo "${GREEN}=> [zsh] ~/.zshrc, ~/.zsh${NOCOLOR}"
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.zshrc ~/.zshrc
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.zsh ~/.zsh
-	@echo "${GREEN}=> [gem] ~/.gemrc, ~/.bundle${NOCOLOR}"
+	@echo "${GREEN}=> [ruby] ~/.gemrc, ~/.bundle${NOCOLOR}"
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.gemrc ~/.gemrc
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.bundle ~/.bundle
 	@echo "${GREEN}=> [golang] ~/.go${NOCOLOR}"
