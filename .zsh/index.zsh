@@ -3,8 +3,6 @@ export PATH="/usr/local/bin:~/Workspace/github.com/mziyut/.zsh/bin:$PATH"
 
 # include files
 [ -f ~/.zsh/option.zsh ] && source ~/.zsh/option.zsh
-[ -f ~/.zsh/compensation.zsh ] && source ~/.zsh/compensation.zsh
-[ -f ~/.zsh/history.zsh ] && source ~/.zsh/history.zsh
 [ -f ~/.zsh/color.zsh ] && source ~/.zsh/color.zsh
 [ -f ~/.zsh/language.zsh ] && source ~/.zsh/language.zsh
 [ -f ~/.zsh/tmux.zsh ] && source ~/.zsh/tmux.zsh
