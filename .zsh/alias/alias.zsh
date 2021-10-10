@@ -41,3 +41,6 @@ alias td="tmux detach"
 
 # ssh
 alias pssh="grep -w Host ~/.ssh/config | peco | awk '{print $2}' | xargs -o -n 1 ssh"
+sssh() {
+  ssh `cat $HOME/.ssh/config | grep "Host " | cut -d " " -f 2 | peco`
+}

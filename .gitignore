@@ -54,6 +54,7 @@ Session.vim
 # IDE
 .idea
 .phpcomplete_extended/
+*.code-workspace
 
 ##
 # costom
@@ -72,3 +73,4 @@ Session.vim
 .memo
 .tmp
 .env.bk
+.solargraph.yml
