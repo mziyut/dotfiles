@@ -26,3 +26,6 @@ bindkey "^N" history-beginning-search-forward-end
 bindkey '^R' history-incremental-pattern-search-backward
 bindkey '^S' history-incremental-pattern-search-forward
 
+sssh() {
+  ssh `cat $HOME/.ssh/config | grep "Host " | cut -d " " -f 2 | peco`
+}
