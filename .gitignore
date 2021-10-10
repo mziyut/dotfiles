@@ -69,6 +69,8 @@ Session.vim
 .config/nvim/site/autoload/plug.vim
 .config/nvim/undodir
 !.config/nvim/undodir/.gitkeep
+.config/thefuck/__pycache__/
+.config/gh/hosts.yml
 .gtt.yml
 .memo
 .tmp
