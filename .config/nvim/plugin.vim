@@ -37,6 +37,7 @@ Plug 'tpope/vim-surround'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'LeafCage/yankround.vim'
+Plug 'wakatime/vim-wakatime'
 
 "" git
 Plug 'tpope/vim-fugitive'
