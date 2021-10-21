@@ -39,3 +39,6 @@ nnoremap <Leader><C-p> :<C-u>Unite yankround<CR>
 " command
 command SP :set paste
 command SNP :set nopaste
+
+" vnoremap
+vnoremap <silent> <C-p> "0p<CR>
