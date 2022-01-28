@@ -1,13 +1,6 @@
 " deoplete
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'Shougo/denite.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/neomru.vim'
@@ -73,9 +66,7 @@ Plug 'deoplete-plugins/deoplete-go', { 'do': 'make', 'for': 'go' }
 Plug 'clausreinke/typescript-tools.vim', { 'do': 'npm install'  }
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
-if has('nvim')
-  Plug 'mhartington/nvim-typescript', { 'do': './install.sh', 'for': 'ts' }
-endif
+Plug 'mhartington/nvim-typescript', { 'do': './install.sh', 'for': 'ts' }
 
 "" javascript
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': 'js' }
