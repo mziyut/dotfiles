@@ -36,6 +36,8 @@ create_symlink:
 	@echo "${GREEN}=> [git] ~/.gitignore, ~/.gitconfig${NOCOLOR}"
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.gitignore ~/.gitignore
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.gitconfig ~/.gitconfig
+	@echo "${GREEN}=> [bash] ~/.bashrc, ~/.bashrc${NOCOLOR}"
+	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.bashrc ~/.bashrc
 	@echo "${GREEN}=> [zsh] ~/.zshrc, ~/.zsh${NOCOLOR}"
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.zshrc ~/.zshrc
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.zsh ~/.zsh
@@ -75,6 +77,8 @@ setup_tmux:
 	/bin/sh -c "git clone https://github.com/tmux-plugins/tpm ${TMUX_TMP}"
 
 setup_nvim:
-	pip3 install --user pynvim
-	gem install neovim
-	npm install --global neovim
+	pip3 install --user pynvim ansible-lint cfn-lint nginx-language-server nginxfmt python-lsp-server
+	gem install neovim solargraph
+	npm install --global neovim prettier bash-language-server dockerfile-language-server-nodejs
+	go install golang.org/x/tools/gopls@latest
+	composer global update
