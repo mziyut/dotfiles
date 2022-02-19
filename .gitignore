@@ -1,63 +1,3 @@
-##
-# Mac
-.DS_Store
-.AppleDouble
-.LSOverride
-Icon
-._*
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-Brewfile.lock.json
-
-##
-# Linux
-*~
-.directory
-.Trash-*
-
-
-##
-# Win
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-##
-# Vim
-*.swap
-[._]*.s[a-w][a-z]
-[._]s[a-w][a-z]
-*.un~
-Session.vim
-.netrwhist
-*~
-
-
-##
-# IDE
-.idea
-.phpcomplete_extended/
-*.code-workspace
-
-##
-# costom
 .bundle/cache
 .composer/vendor
 .composer/cache
@@ -71,8 +11,6 @@ Session.vim
 !.config/nvim/undodir/.gitkeep
 .config/thefuck/__pycache__/
 .config/gh/hosts.yml
-.gtt.yml
-.memo
-.tmp
-.env.bk
-.solargraph.yml
+tags
+stdin.info
+.vim/sessions/default.vim

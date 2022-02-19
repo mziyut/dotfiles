@@ -1,4 +1,5 @@
 tap "b4b4r07/tap"
+tap "hashicorp/tap"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -6,22 +7,25 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
-
 brew "act"
 brew "awscli"
 brew "bundler-completion"
 brew "glib"
+brew "php"
 brew "composer"
+brew "ctags"
 brew "deno"
 brew "django-completion"
 brew "dnsmasq"
 brew "docker", link: false
-brew "docker-compose"
+brew "docker-compose", link: false
 brew "editorconfig"
 brew "unbound"
 brew "gobject-introspection"
 brew "srt"
+brew "tesseract"
 brew "ffmpeg"
+brew "fzf"
 brew "gem-completion"
 brew "gh"
 brew "git"
@@ -46,7 +50,6 @@ brew "nkf"
 brew "node-build"
 brew "nodenv"
 brew "peco"
-brew "php"
 brew "pip-completion"
 brew "postgresql", restart_service: true
 brew "postgresql@12"
@@ -59,6 +62,7 @@ brew "ruby-build"
 brew "rbenv"
 brew "reattach-to-user-namespace"
 brew "redis", restart_service: true
+brew "ripgrep"
 brew "ruby"
 brew "ruby-completion"
 brew "terminal-notifier"
@@ -72,7 +76,6 @@ brew "translate-shell"
 brew "tree"
 brew "vim"
 brew "wget"
-brew "youtube-dl"
 brew "zplug"
 brew "zsh"
 brew "zsh-autosuggestions"
@@ -80,8 +83,8 @@ brew "zsh-history-substring-search"
 brew "zsh-navigation-tools"
 brew "zsh-syntax-highlighting"
 brew "b4b4r07/tap/gomi"
+brew "hashicorp/tap/terraform-ls"
 brew "heroku/brew/heroku"
-
 cask "1password", args: { appdir: "/Applications" }
 cask "adobe-creative-cloud", args: { appdir: "/Applications" }
 cask "alfred", args: { appdir: "/Applications" }
@@ -128,7 +131,6 @@ cask "visual-studio-code", args: { appdir: "/Applications" }
 cask "vivaldi", args: { appdir: "/Applications" }
 cask "xmind", args: { appdir: "/Applications" }
 cask "zoom"
-
 mas "Day One", id: 1055511498
 mas "ForkLift", id: 412448059
 mas "GarageBand", id: 682658836
@@ -140,6 +142,7 @@ mas "Microsoft To Do", id: 1274495053
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Quiver", id: 866773894
+mas "ScanSnap Cloud", id: 1035516352
 mas "Spark", id: 1176895641
 mas "Todoist", id: 585829637
 mas "Xcode", id: 497799835

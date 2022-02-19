@@ -1,8 +1,9 @@
 NOCOLOR		= \033[0m
 RED			= \033[0;31m
-GREEN		= \033[0;32m
-BREWFILE	= ~/Workspace/github.com/mziyut/dotfiles/Brewfile
-TMUX_TMP	= ~/.tmux/plugins/tpm
+GREEN			= \033[0;32m
+BREWFILE		= ~/Workspace/github.com/mziyut/dotfiles/Brewfile
+BREWFILE_WORK		= ~/Workspace/github.com/mziyut/dotfiles/Brewfile-work
+TMUX_TMP		= ~/.tmux/plugins/tpm
 
 all: help
 
@@ -11,13 +12,16 @@ setup: create_symlink setup_brew install_brew setup_tmux setup_nvim
 help:
 	@echo "mziyut dotfiles"
 	@echo "================"
-	@echo "make create_symlink		- create symbolic link from dotfiles repository"
-	@echo "make create_vim_dict		- create vim dictionary (not nvim support)"
-	@echo "make install_brew		- brew install according to the brewfile definition"
-	@echo "make install_pip3		- require machine learning library python3"
-	@echo "make setup_brew			- brew setup"
-	@echo "make setup_tmux			- tmux plugin download"
-	@echo "make setup_nvim			- neovim require ruby, node, python3 library install"
+	@echo "make create_symlink			- create symbolic link from dotfiles repository"
+	@echo "make create_vim_dict			- create vim dictionary (not nvim support)"
+	@echo "make install_brew			- brew install according to the brewfile definition"
+	@echo "make install_brew_work			- brew install according to the brewfile definition"
+	@echo "make install_pip3			- require machine learning library python3"
+	@echo "make generate_brewfile			- generate brewfile"
+	@echo "make generate_brewfile_work		- generate brewfile for work"
+	@echo "make setup_brew				- brew setup"
+	@echo "make setup_tmux				- tmux plugin download"
+	@echo "make setup_nvim				- neovim require ruby, node, python3 library install"
 
 create_symlink:
 	@echo "${GREEN}=> [vim] ~/.vimrc, ~/.vim${NOCOLOR}"
@@ -30,8 +34,10 @@ create_symlink:
 	@echo "${GREEN}=> [tmux] ~/.tmux.conf${NOCOLOR}"
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.tmux.conf ~/.tmux.conf
 	@echo "${GREEN}=> [git] ~/.gitignore, ~/.gitconfig${NOCOLOR}"
-	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.gitignore ~/.gitignore
+	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.gitignore_global ~/.gitignore
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.gitconfig ~/.gitconfig
+	@echo "${GREEN}=> [bash] ~/.bashrc, ~/.bashrc${NOCOLOR}"
+	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.bashrc ~/.bashrc
 	@echo "${GREEN}=> [zsh] ~/.zshrc, ~/.zsh${NOCOLOR}"
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.zshrc ~/.zshrc
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.zsh ~/.zsh
@@ -50,8 +56,17 @@ create_vim_dict:
 install_brew:
 	brew bundle install --file $(BREWFILE)
 
+install_brew_work:
+	brew bundle install --file $(BREWFILE_WORK)
+
 install_pip3:
 	pip3 install numpy scipy matplotlib pandas scikit-learn chainer jupyter
+
+generate_brewfile:
+	brew bundle dump --file $(BREWFILE) --force
+
+generate_brewfile_work:
+	brew bundle dump --file $(BREWFILE_WORK) --force
 
 setup_brew:
 	@echo "${GREEN}=> Brew command not install.${NOCOLOR}"
@@ -62,6 +77,8 @@ setup_tmux:
 	/bin/sh -c "git clone https://github.com/tmux-plugins/tpm ${TMUX_TMP}"
 
 setup_nvim:
-	pip3 install --user pynvim
-	gem install neovim
-	npm install --global neovim
+	pip3 install --user pynvim ansible-lint cfn-lint nginx-language-server nginxfmt python-lsp-server
+	gem install neovim solargraph
+	npm install --global neovim prettier bash-language-server dockerfile-language-server-nodejs
+	go install golang.org/x/tools/gopls@latest
+	composer global update
