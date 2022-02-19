@@ -34,7 +34,7 @@ create_symlink:
 	@echo "${GREEN}=> [tmux] ~/.tmux.conf${NOCOLOR}"
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.tmux.conf ~/.tmux.conf
 	@echo "${GREEN}=> [git] ~/.gitignore, ~/.gitconfig${NOCOLOR}"
-	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.gitignore ~/.gitignore
+	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.gitignore_global ~/.gitignore
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.gitconfig ~/.gitconfig
 	@echo "${GREEN}=> [bash] ~/.bashrc, ~/.bashrc${NOCOLOR}"
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.bashrc ~/.bashrc
