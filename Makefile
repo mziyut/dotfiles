@@ -22,6 +22,7 @@ help:
 	@echo "make setup_brew				- brew setup"
 	@echo "make setup_tmux				- tmux plugin download"
 	@echo "make setup_nvim				- neovim require ruby, node, python3 library install"
+	@echo "make format				- format file"
 
 create_symlink:
 	@echo "${GREEN}=> [vim] ~/.vimrc, ~/.vim${NOCOLOR}"
@@ -62,6 +63,10 @@ install_brew_work:
 install_pip3:
 	pip3 install numpy scipy matplotlib pandas scikit-learn chainer jupyter
 
+install_gh_cli_extension:
+	gh extension install dlvhdr/gh-dash
+	gh extension install Link-/gh-token
+
 generate_brewfile:
 	brew bundle dump --file $(BREWFILE) --force
 
@@ -82,3 +87,6 @@ setup_nvim:
 	npm install --global neovim prettier bash-language-server dockerfile-language-server-nodejs
 	go install golang.org/x/tools/gopls@latest
 	composer global update
+
+format:
+	npx prettier --write . --ignore-path .gitignore

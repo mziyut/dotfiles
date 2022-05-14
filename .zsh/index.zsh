@@ -1,6 +1,3 @@
-# homebrew PATH
-export PATH="/usr/local/bin:~/Workspace/github.com/mziyut/.zsh/bin:$PATH"
-
 # include files
 [ -f ~/.zsh/option.zsh ] && source ~/.zsh/option.zsh
 [ -f ~/.zsh/color.zsh ] && source ~/.zsh/color.zsh
@@ -17,3 +14,5 @@ case "${OSTYPE}" in
     [ -f ~/.zsh/linux.zsh ] && source ~/.zsh/linux.zsh
   ;;
 esac
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
