@@ -63,6 +63,10 @@ install_brew_work:
 install_pip3:
 	pip3 install numpy scipy matplotlib pandas scikit-learn chainer jupyter
 
+install_gh_cli_extension:
+	gh extension install dlvhdr/gh-dash
+	gh extension install Link-/gh-token
+
 generate_brewfile:
 	brew bundle dump --file $(BREWFILE) --force
 
