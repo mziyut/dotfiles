@@ -111,6 +111,7 @@ cask "font-noto-sans-cjk", args: { appdir: "/Applications" }
 cask "font-ricty-diminished", args: { appdir: "/Applications" }
 cask "google-chrome", args: { appdir: "/Applications" }
 cask "google-japanese-ime", args: { appdir: "/Applications" }
+cask "hyper"
 cask "iterm2", args: { appdir: "/Applications" }
 cask "karabiner-elements", args: { appdir: "/Applications" }
 cask "keycastr"
