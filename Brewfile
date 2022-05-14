@@ -9,6 +9,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 brew "act"
 brew "awscli"
+brew "bitwarden-cli"
 brew "bundler-completion"
 brew "glib"
 brew "php"
@@ -112,6 +113,7 @@ cask "google-drive"
 cask "google-drive-file-stream", args: { appdir: "/Applications" }
 cask "google-japanese-ime", args: { appdir: "/Applications" }
 cask "gyazo", args: { appdir: "/Applications" }
+cask "hyper"
 cask "iterm2", args: { appdir: "/Applications" }
 cask "karabiner-elements", args: { appdir: "/Applications" }
 cask "krisp", args: { appdir: "/Applications" }
