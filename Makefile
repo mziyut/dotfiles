@@ -22,6 +22,7 @@ help:
 	@echo "make setup_brew				- brew setup"
 	@echo "make setup_tmux				- tmux plugin download"
 	@echo "make setup_nvim				- neovim require ruby, node, python3 library install"
+	@echo "make format				- format file"
 
 create_symlink:
 	@echo "${GREEN}=> [vim] ~/.vimrc, ~/.vim${NOCOLOR}"
@@ -82,3 +83,6 @@ setup_nvim:
 	npm install --global neovim prettier bash-language-server dockerfile-language-server-nodejs
 	go install golang.org/x/tools/gopls@latest
 	composer global update
+
+format:
+	npx prettier --write . --ignore-path .gitignore
