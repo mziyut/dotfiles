@@ -35,6 +35,8 @@ create_symlink:
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.config/Hyper ~/.config/Hyper
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.config/Hyper/.hyper.js ~/.hyper.js
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.config/Hyper/.hyper_plugins ~/.hyper_plugins
+	@echo "${GREEN}=> [node] ~/.huskyrc${NOCOLOR}"
+	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.huskyrc ~/.huskyrc
 	@echo "${GREEN}=> [tmux] ~/.tmux.conf${NOCOLOR}"
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.tmux.conf ~/.tmux.conf
 	@echo "${GREEN}=> [git] ~/.gitignore, ~/.gitconfig${NOCOLOR}"

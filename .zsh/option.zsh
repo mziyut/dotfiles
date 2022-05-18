@@ -11,15 +11,6 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=10000
 export SAVEHIST=10000
 export HISTTIMEFORMAT="[%Y/%M/%D %H:%M:%S] "
-# ----
-# compensation
-autoload -U compinit
-autoload history-search-end
-compinit -u
-# brew install zsh-completions
-if [ -e /usr/local/share/zsh-completions ]; then
-  fpath=(/usr/local/share/zsh-completions $fpath)
-fi
 # ---
 # Set bindkey
 bindkey -v
