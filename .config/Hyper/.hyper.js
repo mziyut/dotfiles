@@ -11,7 +11,7 @@ module.exports = {
     fontSize: 12,
     // font family with optional fallbacks
     fontFamily:
-      'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+      '"HackGen Console", "Hack Nerd Font Mono", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
     // default font weight: 'normal' or 'bold'
     fontWeight: "normal",
     // font weight for bold characters: 'normal' or 'bold'
@@ -131,6 +131,7 @@ module.exports = {
     // set to true to preserve working directory when creating splits or tabs
     preserveCWD: true,
     // for advanced config flags please refer to https://hyper.is/#cfg
+    scrollback: "100000",
   },
   // a list of plugins to fetch and install from npm
   // format: [@org/]project[#version]

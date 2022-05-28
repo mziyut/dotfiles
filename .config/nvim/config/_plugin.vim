@@ -101,3 +101,4 @@ let g:coc_global_extensions = [
 			\ ]
 " Plug 'soramugi/auto-ctags.vim'
 let g:auto_ctags = 1
+let g:auto_ctags_tags_name = '.tags'
