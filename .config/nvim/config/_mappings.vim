@@ -23,6 +23,11 @@ inoremap <Leader>date <C-R>=strftime('%Y/%m/%d (%a)')<CR>
 inoremap <Leader>time <C-R>=strftime('%H:%M')<CR>
 inoremap <Leader>w3cd <C-R>=strftime('%Y-%m-%dT%H:%M:%S+09:00')<CR>
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 
 " nnoremap
 nnoremap <Esc><Esc> :nohlsearch<CR>
