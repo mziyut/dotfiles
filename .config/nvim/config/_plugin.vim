@@ -65,6 +65,7 @@ let g:blade_custom_directives_pairs = {
 " Plug 'neoclide/coc.nvim'
 let g:coc_global_extensions = [
 			\ 'coc-blade',
+			\ 'coc-browser',
 			\ 'coc-cfn-lint',
 			\ 'coc-cmake',
 			\ 'coc-deno',

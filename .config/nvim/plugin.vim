@@ -13,7 +13,7 @@ Plug 'vim-airline/vim-airline-themes'
 "" file list
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/remote', 'do': ':UpdateRemotePlugins' }
@@ -38,3 +38,6 @@ Plug 'dense-analysis/ale'
 "" git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+
+"" tracking
+Plug 'wakatime/vim-wakatime'

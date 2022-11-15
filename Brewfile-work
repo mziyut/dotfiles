@@ -1,24 +1,33 @@
+tap "1password/tap"
 tap "b4b4r07/tap"
+tap "getsentry/tools"
 tap "hashicorp/tap"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
+tap "homebrew/services"
 tap "nektos/tap"
 tap "reviewdog/tap"
+tap "snyk/tap"
 tap "uasi/pict"
 brew "act"
-brew "sqlite"
-brew "python@3.9"
+brew "python@3.10"
 brew "awscli"
 brew "bundler-completion"
+brew "glib"
 brew "cfn-lint"
-brew "circleci"
+brew "cmake"
+brew "openldap"
+brew "curl"
+brew "freetds"
+brew "icu4c"
+brew "libpq"
+brew "php"
 brew "composer"
 brew "ctags"
 brew "deno"
-brew "django-completion"
 brew "dnsmasq"
 brew "docker", link: false
 brew "docker-compose", link: false
@@ -31,14 +40,12 @@ brew "ghq"
 brew "git"
 brew "git-flow"
 brew "git-lfs"
-brew "glib"
 brew "go"
 brew "goenv"
 brew "grep"
 brew "grunt-completion"
 brew "helm"
 brew "htop"
-brew "icu4c"
 brew "jq"
 brew "kitchen-completion"
 brew "libidn"
@@ -54,25 +61,27 @@ brew "nginx"
 brew "nkf"
 brew "node-build"
 brew "nodenv"
+brew "openssl@3"
 brew "peco"
-brew "php"
 brew "pict"
 brew "pip-completion"
-brew "postgresql"
 brew "pulumi"
 brew "pyenv"
+brew "python@3.9"
 brew "rails-completion"
 brew "rake-completion"
 brew "ruby-build"
 brew "rbenv"
 brew "reattach-to-user-namespace"
-brew "redis"
+brew "redis", restart_service: true
 brew "ripgrep"
 brew "ruby"
 brew "ruby-completion"
 brew "shared-mime-info"
 brew "telnet"
 brew "terminal-notifier"
+brew "terraform-docs"
+brew "terraform-lsp"
 brew "terraformer"
 brew "tfenv"
 brew "tflint"
@@ -91,18 +100,22 @@ brew "zsh-history-substring-search"
 brew "zsh-navigation-tools"
 brew "zsh-syntax-highlighting"
 brew "b4b4r07/tap/gomi"
+brew "getsentry/tools/sentry-cli"
 brew "hashicorp/tap/terraform-ls"
 brew "heroku/brew/heroku"
 brew "reviewdog/tap/reviewdog"
+brew "snyk/tap/snyk"
 cask "1password", args: { appdir: "/Applications" }
+cask "1password-cli"
+cask "adobe-acrobat-reader"
 cask "alfred", args: { appdir: "/Applications" }
+cask "amazon-chime"
 cask "appcleaner", args: { appdir: "/Applications" }
 cask "bartender", args: { appdir: "/Applications" }
 cask "bettertouchtool", args: { appdir: "/Applications" }
-cask "dash", args: { appdir: "/Applications" }
 cask "deepl", args: { appdir: "/Applications" }
-cask "discord", args: { appdir: "/Applications" }
-cask "docker", args: { appdir: "/Applications" }
+cask "docker"
+cask "drawio"
 cask "figma", args: { appdir: "/Applications" }
 cask "firefox", args: { appdir: "/Applications" }
 cask "font-fontawesome", args: { appdir: "/Applications" }
@@ -111,16 +124,19 @@ cask "font-hasklig", args: { appdir: "/Applications" }
 cask "font-noto-sans-cjk", args: { appdir: "/Applications" }
 cask "font-ricty-diminished", args: { appdir: "/Applications" }
 cask "google-chrome", args: { appdir: "/Applications" }
+cask "google-cloud-sdk"
 cask "google-japanese-ime", args: { appdir: "/Applications" }
 cask "hyper"
 cask "iterm2", args: { appdir: "/Applications" }
 cask "karabiner-elements", args: { appdir: "/Applications" }
 cask "keycastr"
+cask "licecap"
 cask "macs-fan-control", args: { appdir: "/Applications" }
+cask "mark-text"
 cask "menumeters", args: { appdir: "/Applications" }
 cask "r", args: { appdir: "/Applications" }
 cask "rstudio", args: { appdir: "/Applications" }
-cask "sequel-pro", args: { appdir: "/Applications" }
+cask "sequel-ace"
 cask "slack", args: { appdir: "/Applications" }
 cask "the-unarchiver", args: { appdir: "/Applications" }
 cask "virtualbox"

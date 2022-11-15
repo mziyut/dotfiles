@@ -22,6 +22,7 @@
 	d5 = diff HEAD~~~~~
 	dc = diff --cached
 	delete-merged-branches = !git branch --merged | grep -vE '^\\*|master$|main$|develop$' | xargs -I % git branch -d %
+	delete-branche = !git branch | grep -v 'master' | peco | xargs -I % git branch -D %
 	dmas = diff master
 	dmai = diff main
 	ds = diff --staged
