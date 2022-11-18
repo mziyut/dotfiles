@@ -9,9 +9,13 @@ tap "homebrew/core"
 tap "homebrew/services"
 brew "act"
 brew "awscli"
+brew "node"
 brew "bitwarden-cli"
 brew "bundler-completion"
 brew "glib"
+brew "curl"
+brew "freetds"
+brew "libpq"
 brew "php"
 brew "composer"
 brew "ctags"
@@ -22,11 +26,14 @@ brew "docker", link: false
 brew "docker-compose", link: false
 brew "editorconfig"
 brew "unbound"
+brew "gnutls"
+brew "python@3.10"
 brew "gobject-introspection"
 brew "srt"
 brew "tesseract"
 brew "ffmpeg"
 brew "fzf"
+brew "gawk"
 brew "gem-completion"
 brew "gh"
 brew "ghq"
@@ -37,6 +44,7 @@ brew "go"
 brew "goenv"
 brew "grunt-completion"
 brew "htop"
+brew "hugo"
 brew "jq"
 brew "kitchen-completion"
 brew "lv"
@@ -52,10 +60,11 @@ brew "nkf"
 brew "node-build"
 brew "nodenv"
 brew "peco"
+brew "perl"
 brew "pip-completion"
-brew "postgresql", restart_service: true
 brew "postgresql@12"
-brew "pulumi"
+brew "postgresql@14"
+brew "pulumi", link: false
 brew "pyenv"
 brew "python@3.8"
 brew "rails-completion"
@@ -65,6 +74,7 @@ brew "rbenv"
 brew "reattach-to-user-namespace"
 brew "redis", restart_service: true
 brew "ripgrep"
+brew "rlwrap"
 brew "ruby"
 brew "ruby-completion"
 brew "terminal-notifier"
@@ -106,6 +116,7 @@ cask "figma", args: { appdir: "/Applications" }
 cask "firefox", args: { appdir: "/Applications" }
 cask "font-fontawesome", args: { appdir: "/Applications" }
 cask "font-hack-nerd-font", args: { appdir: "/Applications" }
+cask "font-hackgen-nerd"
 cask "font-hasklig", args: { appdir: "/Applications" }
 cask "font-noto-sans-cjk", args: { appdir: "/Applications" }
 cask "font-ricty-diminished", args: { appdir: "/Applications" }
@@ -141,7 +152,6 @@ mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Kindle", id: 405399194
 mas "LINE", id: 539883307
-mas "Microsoft To Do", id: 1274495053
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Quiver", id: 866773894
