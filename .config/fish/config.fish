@@ -4,3 +4,5 @@ end
 # thefuck
 # @see https://github.com/nvbn/thefuck/wiki/Shell-aliases
 thefuck --alias | source
+# nodenv
+eval (nodenv init - | source)
