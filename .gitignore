@@ -36,3 +36,19 @@ stdin.info
 .zsh//hisoty/
 .zsh/.zshrc.default
 .zsh/personal.zsh
+# fish
+.config/fish/functions/__*
+.config/fish/functions/peco_select_history.fish
+.config/fish/functions/peco_kill.fish
+.config/fish/conf.d/ghq_key_bindings.fish
+.config/fish/conf.d/z.fish
+.config/fish/conf.d/fzf.fish
+.config/fish/conf.d/done.fish
+.config/fish/completions/ghq.fish
+.config/fish/completions/rustup.fish
+.config/fish/functions/expand-word.fish
+.config/fish/functions/expand:choose-next.fish
+.config/fish/functions/expand:execute.fish
+.config/fish/functions/expand:match.fish
+.config/fish/functions/expand:revert.fish
+.config/fish/completions/expand-word.fish
