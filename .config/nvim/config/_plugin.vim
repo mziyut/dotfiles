@@ -82,6 +82,7 @@ let g:coc_global_extensions = [
 			\ 'coc-lists',
 			\ 'coc-php-cs-fixer',
 			\ 'coc-prettier',
+			\ 'coc-rust-analyzer',
 			\ 'coc-sh',
 			\ 'coc-stylelint',
 			\ 'coc-solargraph',
