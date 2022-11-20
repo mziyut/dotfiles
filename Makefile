@@ -17,6 +17,7 @@ help:
 	@echo "make install_brew			- brew install according to the brewfile definition"
 	@echo "make install_brew_work			- brew install according to the brewfile definition"
 	@echo "make install_pip3			- require machine learning library python3"
+	@echo "make install_rustup 			- rustup install"
 	@echo "make generate_brewfile			- generate brewfile"
 	@echo "make generate_brewfile_work		- generate brewfile for work"
 	@echo "make setup_brew				- brew setup"
@@ -72,6 +73,9 @@ install_gh_cli_extension:
 	gh extension install dlvhdr/gh-dash
 	gh extension install Link-/gh-token
 
+install_rustup:
+	rustup component add rust-analyzer rustfmt
+
 generate_brewfile:
 	brew bundle dump --file $(BREWFILE) --force
 
@@ -92,6 +96,9 @@ setup_nvim:
 	npm install --global neovim prettier bash-language-server dockerfile-language-server-nodejs
 	go install golang.org/x/tools/gopls@latest
 	composer global update
+
+setup_rust:
+	rustup-init
 
 format:
 	npx prettier --write . --ignore-path .gitignore

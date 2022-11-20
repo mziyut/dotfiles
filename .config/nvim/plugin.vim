@@ -35,6 +35,9 @@ Plug 'tpope/vim-surround'
 Plug 'sheerun/vim-polyglot'
 Plug 'dense-analysis/ale'
 
+"" language
+Plug 'rust-lang/rust.vim'
+
 "" git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
