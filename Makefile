@@ -23,19 +23,21 @@ help:
 	@echo "make setup_brew				- brew setup"
 	@echo "make setup_tmux				- tmux plugin download"
 	@echo "make setup_nvim				- neovim require ruby, node, python3 library install"
+	@echo "make setup_fish				- fish setup"
 	@echo "make format				- format file"
 
 create_symlink:
 	@echo "${GREEN}=> [vim] ~/.vimrc, ~/.vim${NOCOLOR}"
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.vimrc ~/.vimrc
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.vim ~/.vim
-	@echo "${GREEN}=> [.config] ~/.config/nvim, ~/.config/gh, ~/.config/thefuck, ~/.config/Hyper ${NOCOLOR}"
+	@echo "${GREEN}=> [.config] ~/.config/nvim, ~/.config/gh, ~/.config/thefuck, ~/.config/Hyper, ~/.config/fish ${NOCOLOR}"
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.config/nvim ~/.config/nvim
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.config/gh ~/.config/gh
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.config/thefuck ~/.config/thefuck
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.config/Hyper ~/.config/Hyper
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.config/Hyper/.hyper.js ~/.hyper.js
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.config/Hyper/.hyper_plugins ~/.hyper_plugins
+	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.config/fish ~/.config/fish
 	@echo "${GREEN}=> [node] ~/.huskyrc${NOCOLOR}"
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.huskyrc ~/.huskyrc
 	@echo "${GREEN}=> [tmux] ~/.tmux.conf${NOCOLOR}"
@@ -96,6 +98,10 @@ setup_nvim:
 	npm install --global neovim prettier bash-language-server dockerfile-language-server-nodejs
 	go install golang.org/x/tools/gopls@latest
 	composer global update
+
+setup_fish:
+	rustup completions fish > ~/.config/fish/completions/rustup.fish
+	fish -c 'fisher update'
 
 setup_rust:
 	rustup-init
