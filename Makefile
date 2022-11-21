@@ -100,8 +100,9 @@ setup_nvim:
 	composer global update
 
 setup_fish:
-	rustup completions fish > ~/.config/fish/completions/rustup.fish
+	fish -c 'curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher'
 	fish -c 'fisher update'
+	rustup completions fish > ~/.config/fish/completions/rustup.fish
 
 setup_rust:
 	rustup-init

@@ -1,8 +1,20 @@
+# thefuck
+# @see https://github.com/nvbn/thefuck/wiki/Shell-aliases
+if type -q thefuck
+	thefuck --alias | source
+end
+# nodenv
+if type -q nodenv
+	eval (nodenv init - | source)
+end
+# pyenv
+if type -q pyenv
+	eval (pyenv init - | source)
+end
+# rbenv
+if type -q rbenv
+	eval (rbenv init - | source)
+end
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
-# thefuck
-# @see https://github.com/nvbn/thefuck/wiki/Shell-aliases
-thefuck --alias | source
-# nodenv
-eval (nodenv init - | source)

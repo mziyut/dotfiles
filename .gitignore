@@ -13,6 +13,7 @@
 !.config/nvim/undodir/.gitkeep
 .config/thefuck/__pycache__/
 .config/gh/hosts.yml
+.config/gh/pat.txt
 tags
 stdin.info
 .vim/old
@@ -37,6 +38,7 @@ stdin.info
 .zsh/.zshrc.default
 .zsh/personal.zsh
 # fish
+.config/fish/fish_variables
 .config/fish/functions/__*
 .config/fish/functions/peco_select_history.fish
 .config/fish/functions/peco_kill.fish
