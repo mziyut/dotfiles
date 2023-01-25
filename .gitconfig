@@ -3,6 +3,7 @@
 	email = me@mziyut.com
 [push]
 	default = simple
+	autoSetupRemote = true
 [core]
 	excludesfile = ~/.gitignore
 	editor = nvim
