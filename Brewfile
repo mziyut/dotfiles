@@ -32,6 +32,7 @@ brew "gobject-introspection"
 brew "srt"
 brew "tesseract"
 brew "ffmpeg"
+brew "fish"
 brew "fzf"
 brew "gawk"
 brew "gem-completion"
@@ -45,6 +46,7 @@ brew "goenv"
 brew "grunt-completion"
 brew "htop"
 brew "hugo"
+brew "infracost"
 brew "jq"
 brew "kitchen-completion"
 brew "lv"
@@ -135,6 +137,7 @@ cask "menumeters", args: { appdir: "/Applications" }
 cask "microsoft-teams", args: { appdir: "/Applications" }
 cask "ngrok"
 cask "notion", args: { appdir: "/Applications" }
+cask "obsidian"
 cask "r", args: { appdir: "/Applications" }
 cask "rstudio", args: { appdir: "/Applications" }
 cask "sequel-pro", args: { appdir: "/Applications" }
