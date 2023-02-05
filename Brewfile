@@ -41,7 +41,6 @@ brew "git"
 brew "git-flow"
 brew "git-lfs"
 brew "go"
-brew "python@3.10"
 brew "gobject-introspection"
 brew "goenv"
 brew "grunt-completion"
@@ -69,6 +68,7 @@ brew "postgresql@12"
 brew "postgresql@14"
 brew "pulumi"
 brew "pyenv"
+brew "python@3.10"
 brew "python@3.8"
 brew "rails-completion"
 brew "rake-completion"
@@ -96,7 +96,6 @@ brew "zplug"
 brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-history-substring-search"
-brew "zsh-navigation-tools"
 brew "zsh-syntax-highlighting"
 brew "b4b4r07/tap/gomi"
 brew "hashicorp/tap/terraform-ls"
@@ -159,7 +158,6 @@ cask "sketch", args: { appdir: "/Applications" }
 cask "slack", args: { appdir: "/Applications" }
 cask "the-unarchiver", args: { appdir: "/Applications" }
 cask "townwifi", args: { appdir: "/Applications" }
-cask "virtualbox"
 cask "visual-studio-code", args: { appdir: "/Applications" }
 cask "vivaldi", args: { appdir: "/Applications" }
 cask "xmind", args: { appdir: "/Applications" }
