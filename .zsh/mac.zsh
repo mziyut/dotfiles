@@ -10,10 +10,16 @@ if [ -d /usr/local/opt/android-sdk ]; then
   export ANDROID_HOME=/usr/local/opt/android-sdk
 fi
 
-source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+if [ -d /usr/local/share ]; then
+	source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+	source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+	source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
+if [ -d /opt/homebrew/share ]; then
+	source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+	source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+	source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
 
 # adb path
 export PATH=$PATH:/Applications/sdk/platform-tools
