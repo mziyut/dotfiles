@@ -112,6 +112,7 @@ cask "atok", args: { appdir: "/Applications" }
 cask "bartender", args: { appdir: "/Applications" }
 cask "bettertouchtool", args: { appdir: "/Applications" }
 cask "bitwarden", args: { appdir: "/Applications" }
+cask "caffeine"
 cask "calibre"
 cask "canon-eos-utility"
 cask "canon-eos-webcam-utility"
@@ -122,7 +123,6 @@ cask "discord", args: { appdir: "/Applications" }
 cask "docker", args: { appdir: "/Applications" }
 cask "drawio"
 cask "dropbox", args: { appdir: "/Applications" }
-cask "eset-cyber-security-pro"
 cask "figma", args: { appdir: "/Applications" }
 cask "firefox", args: { appdir: "/Applications" }
 cask "font-fontawesome", args: { appdir: "/Applications" }
@@ -144,7 +144,9 @@ cask "karabiner-elements", args: { appdir: "/Applications" }
 cask "krisp", args: { appdir: "/Applications" }
 cask "macs-fan-control", args: { appdir: "/Applications" }
 cask "menumeters", args: { appdir: "/Applications" }
+cask "microsoft-auto-update"
 cask "microsoft-edge"
+cask "microsoft-office"
 cask "microsoft-teams", args: { appdir: "/Applications" }
 cask "ngrok"
 cask "notion", args: { appdir: "/Applications" }
