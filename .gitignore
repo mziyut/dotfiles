@@ -46,6 +46,7 @@ stdin.info
 .config/fish/conf.d/z.fish
 .config/fish/conf.d/fzf.fish
 .config/fish/conf.d/done.fish
+.config/fish/conf.d/wakatime.fish
 .config/fish/completions/ghq.fish
 .config/fish/completions/rustup.fish
 .config/fish/functions/expand-word.fish
