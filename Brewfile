@@ -24,7 +24,6 @@ brew "deno"
 brew "django-completion"
 brew "dnsmasq"
 brew "docker", link: false
-brew "docker-compose", link: false
 brew "editorconfig"
 brew "unbound"
 brew "gnutls"
@@ -64,12 +63,9 @@ brew "nodenv"
 brew "peco"
 brew "perl"
 brew "pip-completion"
-brew "postgresql@12"
 brew "postgresql@14"
 brew "pulumi"
 brew "pyenv"
-brew "python@3.10"
-brew "python@3.8"
 brew "rails-completion"
 brew "rake-completion"
 brew "ruby-build"
@@ -79,7 +75,6 @@ brew "redis", restart_service: true
 brew "ripgrep"
 brew "rlwrap"
 brew "ruby"
-brew "ruby-completion"
 brew "rustup-init"
 brew "terminal-notifier"
 brew "terraform"
@@ -104,19 +99,16 @@ cask "1password", args: { appdir: "/Applications" }
 cask "1password-cli"
 cask "adobe-creative-cloud", args: { appdir: "/Applications" }
 cask "alfred", args: { appdir: "/Applications" }
-cask "amazon-photos"
 cask "android-platform-tools"
 cask "android-studio", args: { appdir: "/Applications" }
 cask "appcleaner", args: { appdir: "/Applications" }
 cask "atok", args: { appdir: "/Applications" }
 cask "bartender", args: { appdir: "/Applications" }
-cask "bettertouchtool", args: { appdir: "/Applications" }
 cask "bitwarden", args: { appdir: "/Applications" }
 cask "caffeine"
 cask "calibre"
 cask "canon-eos-utility"
 cask "canon-eos-webcam-utility"
-cask "chrome-remote-desktop-host", args: { appdir: "/Applications" }
 cask "dash", args: { appdir: "/Applications" }
 cask "deepl", args: { appdir: "/Applications" }
 cask "discord", args: { appdir: "/Applications" }
@@ -141,7 +133,6 @@ cask "hhkb-pro-driver"
 cask "hyper"
 cask "iterm2", args: { appdir: "/Applications" }
 cask "karabiner-elements", args: { appdir: "/Applications" }
-cask "krisp", args: { appdir: "/Applications" }
 cask "macs-fan-control", args: { appdir: "/Applications" }
 cask "menumeters", args: { appdir: "/Applications" }
 cask "microsoft-auto-update"
@@ -152,11 +143,10 @@ cask "ngrok"
 cask "notion", args: { appdir: "/Applications" }
 cask "obsidian"
 cask "opera"
-cask "r", args: { appdir: "/Applications" }
+cask "raspberry-pi-imager"
 cask "raycast"
-cask "rstudio", args: { appdir: "/Applications" }
 cask "sequel-ace"
-cask "sketch", args: { appdir: "/Applications" }
+cask "skype"
 cask "slack", args: { appdir: "/Applications" }
 cask "the-unarchiver", args: { appdir: "/Applications" }
 cask "townwifi", args: { appdir: "/Applications" }
@@ -179,6 +169,4 @@ mas "Quiver", id: 866773894
 mas "ScanSnap Cloud", id: 1035516352
 mas "Spark", id: 1176895641
 mas "TestFlight", id: 899247664
-mas "Todoist", id: 585829637
 mas "Xcode", id: 497799835
-mas "宛名職人V25M", id: 1364345957
