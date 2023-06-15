@@ -1,0 +1,4 @@
+.composer/vendor/
+.config/nvim/plugged/
+.config/nvim/undodir/
+.vim/bundle/

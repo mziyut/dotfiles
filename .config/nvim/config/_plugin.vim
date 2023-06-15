@@ -80,6 +80,7 @@ let g:coc_global_extensions = [
 			\ 'coc-html',
 			\ 'coc-json',
 			\ 'coc-lists',
+			\ 'coc-markdown-preview-enhanced',
 			\ 'coc-php-cs-fixer',
 			\ 'coc-prettier',
 			\ 'coc-rust-analyzer',
@@ -92,6 +93,7 @@ let g:coc_global_extensions = [
 			\ 'coc-toml',
 			\ 'coc-tsserver',
 			\ 'coc-vimlsp',
+			\ 'coc-webview',
 			\ 'coc-xml',
 			\ 'coc-yaml',
 			\ 'coc-yank',
@@ -104,3 +106,7 @@ let g:coc_global_extensions = [
 " Plug 'soramugi/auto-ctags.vim'
 let g:auto_ctags = 1
 let g:auto_ctags_tags_name = '.tags'
+" Plug 'github/copilot.vim'
+let g:copilot_filetypes = {
+			\ 'markdown': v:true
+			\ }
