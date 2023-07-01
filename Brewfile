@@ -43,6 +43,7 @@ brew "go"
 brew "gobject-introspection"
 brew "goenv"
 brew "grunt-completion"
+brew "helix"
 brew "htop"
 brew "hugo"
 brew "infracost"
@@ -107,7 +108,6 @@ cask "bartender", args: { appdir: "/Applications" }
 cask "bitwarden", args: { appdir: "/Applications" }
 cask "caffeine"
 cask "calibre"
-cask "canon-eos-utility"
 cask "canon-eos-webcam-utility"
 cask "dash", args: { appdir: "/Applications" }
 cask "deepl", args: { appdir: "/Applications" }
@@ -117,6 +117,7 @@ cask "drawio"
 cask "dropbox", args: { appdir: "/Applications" }
 cask "figma", args: { appdir: "/Applications" }
 cask "firefox", args: { appdir: "/Applications" }
+cask "firefox-developer-edition"
 cask "font-fontawesome", args: { appdir: "/Applications" }
 cask "font-hack-nerd-font", args: { appdir: "/Applications" }
 cask "font-hackgen-nerd"
@@ -124,6 +125,7 @@ cask "font-hasklig", args: { appdir: "/Applications" }
 cask "font-noto-sans-cjk", args: { appdir: "/Applications" }
 cask "font-ricty-diminished", args: { appdir: "/Applications" }
 cask "google-chrome", args: { appdir: "/Applications" }
+cask "google-chrome-canary"
 cask "google-cloud-sdk"
 cask "google-drive"
 cask "google-drive-file-stream", args: { appdir: "/Applications" }
@@ -170,3 +172,19 @@ mas "ScanSnap Cloud", id: 1035516352
 mas "Spark", id: 1176895641
 mas "TestFlight", id: 899247664
 mas "Xcode", id: 497799835
+vscode "asvetliakov.vscode-neovim"
+vscode "dbaeumer.vscode-eslint"
+vscode "denoland.vscode-deno"
+vscode "GitHub.codespaces"
+vscode "GitHub.copilot"
+vscode "GitHub.github-vscode-theme"
+vscode "GitHub.vscode-pull-request-github"
+vscode "hashicorp.terraform"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-vscode.makefile-tools"
+vscode "ms-vsliveshare.vsliveshare"
+vscode "PKief.material-icon-theme"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "unifiedjs.vscode-mdx"
+vscode "vscodevim.vim"
+vscode "WakaTime.vscode-wakatime"
