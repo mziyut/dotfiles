@@ -93,8 +93,7 @@ module.exports = {
     //
     // Cygwin
     // - Example: `C:\\cygwin64\\bin\\bash.exe`
-    // shell: "/usr/local/bin/fish", // for Intel Mac
-    shell: "/opt/homebrew/bin/fish", // for Arm Mac
+    shell: "",
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
     shellArgs: ["--login"],
@@ -140,7 +139,14 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["verminal", "hypercwd", "hyper-tab-icons-plus"],
+  plugins: [
+    "hypercwd",
+    "hyperterm-paste",
+    "hyper-startup",
+    "hyper-statusline",
+    "hyper-tab-icons-plus",
+    "verminal",
+  ],
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
@@ -149,5 +155,7 @@ module.exports = {
     // Example
     // 'window:devtools': 'cmd+alt+o',
   },
+  // hyper-startup
+  commands: ["fish --login"],
 };
 //# sourceMappingURL=config-default.js.map

@@ -37,6 +37,7 @@ Plug 'dense-analysis/ale'
 
 "" language
 Plug 'rust-lang/rust.vim'
+Plug 'andres-lowrie/vim-sqlx'
 
 "" git
 Plug 'airblade/vim-gitgutter'
