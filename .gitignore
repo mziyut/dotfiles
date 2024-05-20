@@ -44,9 +44,7 @@ stdin.info
 .config/fish/functions/peco_kill.fish
 .config/fish/conf.d/ghq_key_bindings.fish
 .config/fish/conf.d/z.fish
-.config/fish/conf.d/fzf.fish
 .config/fish/conf.d/done.fish
-.config/fish/conf.d/wakatime.fish
 .config/fish/completions/ghq.fish
 .config/fish/completions/rustup.fish
 .config/fish/functions/expand-word.fish
@@ -55,3 +53,8 @@ stdin.info
 .config/fish/functions/expand:match.fish
 .config/fish/functions/expand:revert.fish
 .config/fish/completions/expand-word.fish
+## PatrickF1/fzf.fish
+.config/fish/conf.d/fzf.fish
+.config/fish/completions/fzf_*
+.config/fish/functions/_fzf_*
+.config/fish/functions/fzf_*
