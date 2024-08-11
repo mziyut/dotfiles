@@ -1,6 +1,5 @@
 tap "b4b4r07/tap"
 tap "hashicorp/tap"
-tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
@@ -9,8 +8,6 @@ tap "homebrew/services"
 tap "songmu/tap"
 brew "act"
 brew "awscli"
-brew "node"
-brew "bitwarden-cli"
 brew "bundler-completion"
 brew "glib"
 brew "curl"
@@ -47,21 +44,15 @@ brew "infracost"
 brew "jq"
 brew "kitchen-completion"
 brew "lv"
-brew "marp-cli"
 brew "mas"
 brew "openjdk"
 brew "maven"
-brew "mysql"
 brew "mysql-client"
 brew "neovim"
-brew "nginx"
 brew "nkf"
-brew "node-build"
-brew "nodenv"
 brew "peco"
 brew "perl"
 brew "pip-completion"
-brew "pnpm"
 brew "postgresql@14"
 brew "pulumi"
 brew "pyenv"
@@ -70,11 +61,9 @@ brew "rake-completion"
 brew "ruby-build"
 brew "rbenv"
 brew "reattach-to-user-namespace"
-brew "redis", restart_service: true
 brew "ripgrep"
 brew "rlwrap"
-brew "ruby"
-brew "rustup-init"
+brew "rustup"
 brew "terminal-notifier"
 brew "terraformer"
 brew "the_silver_searcher"
@@ -83,7 +72,7 @@ brew "tig"
 brew "tmux"
 brew "translate-shell"
 brew "tree"
-brew "vim"
+brew "volta"
 brew "wget"
 brew "zplug"
 brew "zsh"
@@ -101,6 +90,7 @@ cask "bitwarden", args: { appdir: "/Applications" }
 cask "caffeine"
 cask "calibre"
 cask "canon-eos-webcam-utility"
+cask "chatgpt"
 cask "deepl", args: { appdir: "/Applications" }
 cask "discord", args: { appdir: "/Applications" }
 cask "docker", args: { appdir: "/Applications" }
@@ -108,7 +98,7 @@ cask "drawio"
 cask "dropbox", args: { appdir: "/Applications" }
 cask "figma", args: { appdir: "/Applications" }
 cask "firefox", args: { appdir: "/Applications" }
-cask "firefox-developer-edition"
+cask "firefox@developer-edition"
 cask "font-fontawesome", args: { appdir: "/Applications" }
 cask "font-hack-nerd-font", args: { appdir: "/Applications" }
 cask "font-hackgen-nerd"
@@ -136,6 +126,7 @@ cask "sequel-ace"
 cask "slack", args: { appdir: "/Applications" }
 cask "the-unarchiver", args: { appdir: "/Applications" }
 cask "visual-studio-code", args: { appdir: "/Applications" }
+cask "zed"
 cask "zoom"
 mas "Day One", id: 1055511498
 mas "Developer", id: 640199958
@@ -150,7 +141,7 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Quiver", id: 866773894
 mas "ScanSnap Cloud", id: 1035516352
-mas "Spark", id: 1176895641
+mas "Spark Desktop", id: 6445813049
 mas "TestFlight", id: 899247664
 mas "Todoist", id: 585829637
 mas "Xcode", id: 497799835
@@ -184,6 +175,7 @@ vscode "graphql.vscode-graphql-syntax"
 vscode "hashicorp.terraform"
 vscode "hasurahq.hasura"
 vscode "hediet.vscode-drawio"
+vscode "humao.rest-client"
 vscode "marp-team.marp-vscode"
 vscode "mechatroner.rainbow-csv"
 vscode "mosapride.zenkaku"
@@ -191,6 +183,11 @@ vscode "ms-azuretools.vscode-docker"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
 vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode-remote.remote-ssh"
 vscode "ms-vscode-remote.remote-ssh-edit"
