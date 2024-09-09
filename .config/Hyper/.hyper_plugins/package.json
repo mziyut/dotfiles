@@ -9,7 +9,6 @@
   "dependencies": {
     "hypercwd": "latest",
     "hyperterm-paste": "latest",
-    "hyper-startup": "latest",
     "hyper-statusline": "latest",
     "hyper-tab-icons-plus": "latest",
     "verminal": "latest"
