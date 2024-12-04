@@ -4,6 +4,10 @@
 .composer/composer.lock
 .composer/.htaccess
 .composer/auth.json
+.config/coc/extensions
+.config/coc/memos.json
+.config/coc/mru
+.config/configstore/update-notifier-@docusaurus/core.json
 .config/Hyper/.hyper_plugins/cache
 .config/Hyper/.hyper_plugins/node_modules
 .config/nvim/plugged
@@ -14,6 +18,8 @@
 .config/thefuck/__pycache__/
 .config/gh/hosts.yml
 .config/gh/pat.txt
+.config/github-copilot/versions.json
+.config/raycast/extensions/
 tags
 stdin.info
 .vim/old

@@ -30,17 +30,8 @@ create_symlink:
 	@echo "${GREEN}=> [vim] ~/.vimrc, ~/.vim${NOCOLOR}"
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.vimrc ~/.vimrc
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.vim ~/.vim
-	@echo "${GREEN}=> [.config] ~/.config/nvim, ~/.config/gh, ~/.config/thefuck, ~/.config/Hyper, ~/.config/fish, ~/.config/helix ${NOCOLOR}"
-	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.config/nvim ~/.config/nvim
-	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.config/gh ~/.config/gh
-	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.config/thefuck ~/.config/thefuck
-	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.config/Hyper ~/.config/Hyper
-	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.config/Hyper/.hyper.js ~/.hyper.js
-	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.config/Hyper/.hyper_plugins ~/.hyper_plugins
-	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.config/fish ~/.config/fish
-	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.config/helix ~/.config/helix
-	@echo "${GREEN}=> [node] ~/.huskyrc${NOCOLOR}"
-	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.huskyrc ~/.huskyrc
+	@echo "${GREEN}=> [.config] ~/.config${NOCOLOR}"
+	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.config ~/.config
 	@echo "${GREEN}=> [tmux] ~/.tmux.conf${NOCOLOR}"
 	ln -sfn ~/Workspace/github.com/mziyut/dotfiles/.tmux.conf ~/.tmux.conf
 	@echo "${GREEN}=> [git] ~/.gitignore, ~/.gitconfig${NOCOLOR}"
