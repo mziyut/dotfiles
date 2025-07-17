@@ -1,27 +1,9 @@
-.bundle/cache
-.composer/vendor
-.composer/cache
-.composer/composer.lock
-.composer/.htaccess
-.composer/auth.json
-.config/coc/extensions
-.config/coc/memos.json
-.config/coc/mru
-.config/configstore/update-notifier-@docusaurus/core.json
-.config/Hyper/.hyper_plugins/cache
-.config/Hyper/.hyper_plugins/node_modules
+# nvim
 .config/nvim/plugged
 .config/nvim/cache/
 .config/nvim/site/autoload/plug.vim
 .config/nvim/undodir
-!.config/nvim/undodir/.gitkeep
-.config/thefuck/__pycache__/
-.config/gh/hosts.yml
-.config/gh/pat.txt
-.config/github-copilot/versions.json
-.config/raycast/extensions/
-tags
-stdin.info
+# vim
 .vim/old
 .vim/autoload
 .vim/!autoload/.gitkeep
@@ -37,6 +19,7 @@ stdin.info
 .vim/undodir
 .vim/!undodir/.gitkeep
 .vim/sessions/default.vim
+# zsh
 .zsh/completions_local/
 !.zsh/completions_local/.gitkeep
 .zsh/.zshrc.personal
@@ -51,8 +34,7 @@ stdin.info
 .config/fish/conf.d/ghq_key_bindings.fish
 .config/fish/conf.d/z.fish
 .config/fish/conf.d/done.fish
-.config/fish/completions/ghq.fish
-.config/fish/completions/rustup.fish
+.config/fish/completions/
 .config/fish/functions/expand-word.fish
 .config/fish/functions/expand:choose-next.fish
 .config/fish/functions/expand:execute.fish
@@ -64,3 +46,28 @@ stdin.info
 .config/fish/completions/fzf_*
 .config/fish/functions/_fzf_*
 .config/fish/functions/fzf_*
+# php
+.composer/vendor
+.composer/cache
+.composer/composer.lock
+.composer/.htaccess
+.composer/auth.json
+# ruby
+.bundle/cache
+# other
+.config/coc/extensions
+.config/coc/memos.json
+.config/coc/mru
+.config/configstore/
+.config/gcloud/
+.config/gomi/config.yaml
+.config/Hyper/.hyper_plugins/cache
+.config/Hyper/.hyper_plugins/node_modules
+!.config/nvim/undodir/.gitkeep
+.config/thefuck/__pycache__/
+.config/gh/hosts.yml
+.config/gh/pat.txt
+.config/github-copilot/versions.json
+.config/raycast/extensions/
+tags
+stdin.info
