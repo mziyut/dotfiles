@@ -60,5 +60,6 @@ Session.vim
 .memo
 .tmp
 .env.bk
+.envrc
 .solargraph.yml
 
